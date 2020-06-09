@@ -1,0 +1,28 @@
+FROM alpine
+
+RUN apk add --update \
+      curl \
+      tar \
+      ca-certificates \
+      bind-tools \
+      nmap \
+      iproute2 \
+      iperf3 \
+      netcat-openbsd \
+      nmap \
+      tcpdump \
+      wget \
+      jq \
+      lftp \
+      mtr \
+      iputils \
+      whois \
+      apache2-utils \
+      bash \
+      busybox-extras \
+      git \
+      net-tools \
+      nmap openssh-client openssl \
+      perl-net-telnet \
+      procps rsync socat tcpdump tshark \
+      && rm /var/cache/apk/*
